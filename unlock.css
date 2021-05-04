@@ -1,0 +1,38 @@
+.unlockWrapper {
+	position: relative;
+	background-color: #282828;
+}
+.unlockWrapper div {
+    text-align: center;
+	background-color: #333;
+	border: 1px solid #666;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.unlockWrapper div button {
+	background-color: #282828;
+	outline: none;
+	border: 1px solid #f00;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.unlockWrapper div button:hover {
+	position: relative;
+	top: 2px;
+}
+.unlockWrapper div button:active {
+	background: #f00;
+	text-shadow: 1px 1px 2px #000;
+}
+.unlockWrapper div p {
+	line-height: 1rem;
+	margin: 0 0 20px 0;
+	color: #fff;
+	text-align: center;
+    
+}
