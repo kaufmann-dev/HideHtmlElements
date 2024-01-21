@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lock Elements</title>
+    <title>Hidden HTML Elements</title>
+    
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,13 +12,22 @@
     <link href="unlock.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Lock Elements</h1>
+        <h1 style="margin-bottom: 0;">Hidden HTML Elements</h1>
+        <p style="margin-top: 0;">Password: 1234</p>
 
-        <div class="lockedElement exampleElement" data-title="Hidden element">
-            You have succesfully unlocked the contents of this element.
+        <h2>Locked element</h2>
+        <div class="locked exampleElement" data-title="Hidden element">
+            Succesfully unlocked
+        </div>
+
+        <h2>Password secured element</h2>
+        <div class="passwordSecured exampleElement" data-title="Hidden element">
+            Succesfully unlocked
         </div>
 
         <h3>Files you need to include:</h3>
@@ -32,10 +42,10 @@
         </ul>
 
         <h3>Syntax:</h3>
-        <code>&lt;div class="lockedElement"&gt;Secret content&lt;div&gt;</code>
+        <code>&lt;div class="locked"&gt;Locked element&lt;div&gt;</code><br><br>
+        <code>&lt;div class="passwordSecured"&gt;Password secured element&lt;div&gt;</code>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="unlock.js"></script>
 </body>
 </html>
